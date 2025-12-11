@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vũ | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">Vũ</h1>
+            <p class="site-subtitle">Automation Tester • Builder • Learner</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about" class="card">
+            <h2>About me</h2>
+            <p>
+                Đây là portfolio cá nhân của mình. Trang này dùng để gom các link profile
+                và sau này sẽ có một khung chat kết nối với API của OpenAI.
+            </p>
+        </section>
+
+        <section id="links" class="card">
+            <h2>Profiles</h2>
+            <ul class="link-list">
+                <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Other / Blog</a></li>
+            </ul>
+        </section>
+
+        <section id="chat" class="card">
+            <h2>Chat với Vũ (demo)</h2>
+            <div id="chat-window" class="chat-window">
+                <div class="message bot">
+                    <div class="bubble">
+                        Chào bạn, đây là khung chat demo. Phiên bản đầu chưa kết nối API,
+                        chỉ mô phỏng giao diện và luồng chat.
+                    </div>
+                </div>
+            </div>
+            <form id="chat-form" class="chat-form">
+                <input
+                    type="text"
+                    id="chat-input"
+                    placeholder="Nhập câu hỏi cho Vũ / assistant..."
+                    autocomplete="off"
+                    required
+                />
+                <button type="submit">Gửi</button>
+            </form>
+            <p class="note">
+                Lưu ý: bản này chỉ là UI mẫu. Sau này sẽ cấu hình gọi API OpenAI từ backend
+                riêng (không để API key trong JavaScript chạy trên browser).
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <small>© 2025 Vũ. All rights reserved.</small>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
